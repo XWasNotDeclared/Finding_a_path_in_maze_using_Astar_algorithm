@@ -1,10 +1,9 @@
 import heapq
-
 class PriorityQueue:
     def __init__(self):
         self._queue = []
-    def push(self, priority):
-        heapq.heappush(self._queue,priority)
+    def push(self, item):
+        heapq.heappush(self._queue,item)
     def pop(self):
         return heapq.heappop(self._queue)
     def isEmpty(self):
