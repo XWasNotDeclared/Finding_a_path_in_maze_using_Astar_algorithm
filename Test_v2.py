@@ -15,14 +15,14 @@ pygame.init()
 #             [0, 1, 0, 0, 0, 0, 1, 0, 0, 0],
 #             [0, 0, 0, 1, 1, 1, 0, 1, 1, 0]
 #             ]
-grid = random_generate_maze(35,70)
+grid = random_generate_maze(65,120)
 
 delay_time = 2              # delay time of pygame
 rows = len(grid)
 cols = len(grid[0])
-cell_size = 700//rows
-WIDTH = cols*cell_size
-HEIGHT = rows*cell_size
+WIDTH = 1200
+HEIGHT = 650
+cell_size = 10
 
 
 
@@ -239,4 +239,4 @@ def Astar(grid,start, dest, num_directional_offset = 8):
     return "Cannot finding !!!"
 
 if __name__ == "__main__":
-        print (Astar(grid, [rows-1,cols-1], [0,0],8))
+        print (Astar(grid, [rows-1,cols-1], [0,0],4))
