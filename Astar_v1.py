@@ -100,6 +100,7 @@ def Astar(grid,start, dest):
     return "Cannot finding !!!"
 
 if __name__ == "__main__":
+    # 1 is blocked
     grid = [
         [0, 1, 0, 0, 0, 0, 1, 0, 0, 0],
         [0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
